@@ -1,21 +1,32 @@
-* {
-    color: yellow;
+body {
+    font-family: Georgia,serif;
+    margin: 20px;
 }
-
-h1 {
-    color: green;
+.container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px;
+    margin: 20px;
 }
-
-button {
-    color: brown;
+.circle {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto 15px;
 }
-
-#headingOne {
-    color: green;
+h3 {
+    margin-bottom: 5px;
 }
-#headingTwo {
-    color: red;
-}
-.myClass {
-    color: blue;
+p {
+    margin: 5px 0;
+    font-size: 14px;
 }
