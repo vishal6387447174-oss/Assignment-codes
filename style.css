@@ -1,32 +1,52 @@
-body {
-    font-family: Georgia,serif;
-    margin: 20px;
+body{
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
+
 .container {
-    border: 2px solid black;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 40px;
-    padding: 40px;
-    margin: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.circle {
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    margin: 0 auto 15px;
+.card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
 }
-h3 {
-    margin-bottom: 5px;
+
+.card img {
+    width: 100%;
+    height: 180px;
 }
-p {
-    margin: 5px 0;
+.card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+.desc {
     font-size: 14px;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+.price {
+    color: green;
+    font-size: 22px;
+    margin: 10px;
+}
+button {
+    background-color:blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+button:hover {
+    background-color: darkblue;
 }
