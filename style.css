@@ -2,36 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
+body{
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 10px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+.desc {
+    font-size: 14px;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+.price {
+    color: green;
+    font-size: 22px;
+    margin: 10px;
+}
+button {
+    background-color:blue;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
 }
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-.nav-links li {
-    margin: 0 15px;
-}
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-.actions a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+button:hover {
+    background-color: darkblue;
 }
 /* mobile phone */
 @media (max-width: 768px) {
@@ -47,6 +72,7 @@
     .nav-links a {
         font-size: 0.9rem;
     }
+}
 /* Desktop */
 @media (min-width: 1025px) {
     .nav-links a {
@@ -54,8 +80,3 @@
     }
 }
 
-
-
-
-
-    
